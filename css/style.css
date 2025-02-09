@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	/* font-family: 'Roboto', sans-serif; */
+    padding: 0;
+    margin: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* ----------bootstrap-navbar-css------------ */
+.nav-link {
+    color: #020202;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+   .nav-link:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000000;
+    transition: width 0.5s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-link:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+/* ----------end bootstrap-navbar-css------------ */
+
+/* ----------Jumbotron------------ */
+.jumbotron {
+    background-image: url('img/jumbotron.jpg');
+    padding-top: 40px;
+}
+
+/* ----------dark-mode------------ */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.darkmode {
+}
+
+.dark-mode .navbar {
+  background-color: #333 !important;
+}
+
+.dark-mode body {
+  background-color: #222;
+  color: white;
+}
